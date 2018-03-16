@@ -5,16 +5,16 @@
   
   <title>markdown画流程图 | 幻世轩</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="st=&amp;gt;start: Start     op=&amp;gt;operation: home     cond=&amp;gt;condition: is look for     userCenter=&amp;gt;operation: usercenter     search=&amp;gt;operation: search talent     myTalent=&amp;gt;subroutine: my talent     myTal">
+  <meta name="description" content="st=&amp;gt;start: Start op=&amp;gt;operation: home cond=&amp;gt;condition: is look for userCenter=&amp;gt;operation: usercenter search=&amp;gt;operation: search talent myTalent=&amp;gt;subroutine: my talent myTalentList=&amp;gt;operation: my talen">
 <meta property="og:type" content="article">
 <meta property="og:title" content="markdown画流程图">
 <meta property="og:url" content="https://unrealyan.com/2018/03/15/markdown画流程图/index.html">
 <meta property="og:site_name" content="幻世轩">
-<meta property="og:description" content="st=&amp;gt;start: Start     op=&amp;gt;operation: home     cond=&amp;gt;condition: is look for     userCenter=&amp;gt;operation: usercenter     search=&amp;gt;operation: search talent     myTalent=&amp;gt;subroutine: my talent     myTal">
-<meta property="og:updated_time" content="2018-03-16T07:06:36.455Z">
+<meta property="og:description" content="st=&amp;gt;start: Start op=&amp;gt;operation: home cond=&amp;gt;condition: is look for userCenter=&amp;gt;operation: usercenter search=&amp;gt;operation: search talent myTalent=&amp;gt;subroutine: my talent myTalentList=&amp;gt;operation: my talen">
+<meta property="og:updated_time" content="2018-03-16T07:44:36.533Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="markdown画流程图">
-<meta name="twitter:description" content="st=&amp;gt;start: Start     op=&amp;gt;operation: home     cond=&amp;gt;condition: is look for     userCenter=&amp;gt;operation: usercenter     search=&amp;gt;operation: search talent     myTalent=&amp;gt;subroutine: my talent     myTal">
+<meta name="twitter:description" content="st=&amp;gt;start: Start op=&amp;gt;operation: home cond=&amp;gt;condition: is look for userCenter=&amp;gt;operation: usercenter search=&amp;gt;operation: search talent myTalent=&amp;gt;subroutine: my talent myTalentList=&amp;gt;operation: my talen">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -62,32 +62,32 @@
     <div class="article-entry typo" itemprop="articleBody">
       
         <p><div id="flowchart-0" class="flow-chart"></div></p>
-<p><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">    st=>start: Start
-    op=>operation: home
-    cond=>condition: is look for
-    userCenter=>operation: usercenter
-    search=>operation: search talent
-    myTalent=>subroutine: my talent
-    myTalentList=>operation: my talent list
-    io=>inputoutput: catch
-    showTalent=>operation: show talent list
-    talentDetail=>operation: show talent detail
-    showMobile=>inputoutput: payment
-    isPay=>condition: pya?
-    newTalent=>operation: new talent
-    isInput=>condition: is input
-
-
-
-
-    e=>end
-
-    st->op->cond
-    cond(yes)->search->showTalent->talentDetail
-    <!-- talentDetail->showMobile->op -->
-    cond(no,left)->userCenter->isInput(no)->myTalentList
-    isInput(yes)->newTalent
-    myTalentList->talentDetail</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></p>
+<p><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: Start
+op=>operation: home
+cond=>condition: is look for
+userCenter=>operation: usercenter
+search=>operation: search talent
+myTalent=>subroutine: my talent
+myTalentList=>operation: my talent list
+io=>inputoutput: catch
+showTalent=>operation: show talent list
+talentDetail=>operation: show talent detail
+showMobile=>inputoutput: payment
+isPay=>condition: pya?
+newTalent=>operation: new talent
+isInput=>condition: is input
+showTalentWithMobile=>operation: show 
+talent detail with mobile
+showTalentWithNoMobile=>operation: show 
+talent detail with no mobile
+e=>end: End
+st->op->cond
+cond(yes)->search->showTalent->talentDetail
+cond(no,left)->userCenter->isInput(no)->myTalentList
+isInput(yes)->newTalent->myTalentList
+myTalentList->talentDetail->isPay
+isPay(yes)->showTalentWithMobile->e
+isPay(no)->showTalentWithNoMobile->e</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></p>
 
       
       <div id="donate" class="donate">
