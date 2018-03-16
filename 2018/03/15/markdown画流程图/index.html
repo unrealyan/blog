@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>浏览器的渲染机制 | 幻世轩</title>
+  <title>markdown画流程图 | 幻世轩</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="浏览器分解">
+  <meta name="description" content="st=&amp;gt;start: Start     op=&amp;gt;operation: home     cond=&amp;gt;condition: is look for     userCenter=&amp;gt;operation: usercenter     search=&amp;gt;operation: search talent     myTalent=&amp;gt;subroutine: my talent     myTal">
 <meta property="og:type" content="article">
-<meta property="og:title" content="浏览器的渲染机制">
-<meta property="og:url" content="https://unrealyan.com/2018/03/07/浏览器的渲染机制/index.html">
+<meta property="og:title" content="markdown画流程图">
+<meta property="og:url" content="https://unrealyan.com/2018/03/15/markdown画流程图/index.html">
 <meta property="og:site_name" content="幻世轩">
-<meta property="og:description" content="浏览器分解">
-<meta property="og:updated_time" content="2018-03-07T04:55:17.020Z">
+<meta property="og:description" content="st=&amp;gt;start: Start     op=&amp;gt;operation: home     cond=&amp;gt;condition: is look for     userCenter=&amp;gt;operation: usercenter     search=&amp;gt;operation: search talent     myTalent=&amp;gt;subroutine: my talent     myTal">
+<meta property="og:updated_time" content="2018-03-16T07:06:36.455Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="浏览器的渲染机制">
-<meta name="twitter:description" content="浏览器分解">
+<meta name="twitter:title" content="markdown画流程图">
+<meta name="twitter:description" content="st=&amp;gt;start: Start     op=&amp;gt;operation: home     cond=&amp;gt;condition: is look for     userCenter=&amp;gt;operation: usercenter     search=&amp;gt;operation: search talent     myTalent=&amp;gt;subroutine: my talent     myTal">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -32,7 +32,7 @@
     
   
       <div id="container" class="container">
-        <article id="post-浏览器的渲染机制" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-markdown画流程图" class="article article-type-post" itemscope itemprop="blogPost">
   <header id="header" class="header">
   <nav id="main-nav" class="main-nav">
     
@@ -53,7 +53,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      浏览器的渲染机制
+      markdown画流程图
     </h1>
   
 
@@ -61,7 +61,34 @@
     
     <div class="article-entry typo" itemprop="articleBody">
       
-        <h2 id="浏览器分解"><a href="#浏览器分解" class="headerlink" title="浏览器分解"></a>浏览器分解</h2>
+        <p><div id="flowchart-0" class="flow-chart"></div></p>
+<p><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">    st=>start: Start
+    op=>operation: home
+    cond=>condition: is look for
+    userCenter=>operation: usercenter
+    search=>operation: search talent
+    myTalent=>subroutine: my talent
+    myTalentList=>operation: my talent list
+    io=>inputoutput: catch
+    showTalent=>operation: show talent list
+    talentDetail=>operation: show talent detail
+    showMobile=>inputoutput: payment
+    isPay=>condition: pya?
+    newTalent=>operation: new talent
+    isInput=>condition: is input
+
+
+
+
+    e=>end
+
+    st->op->cond
+    cond(yes)->search->showTalent->talentDetail
+    <!-- talentDetail->showMobile->op -->
+    cond(no,left)->userCenter->isInput(no)->myTalentList
+    isInput(yes)->newTalent
+    myTalentList->talentDetail</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></p>
+
       
       <div id="donate" class="donate">
         <a id="github" href="https://github.com/geekplux" target="_blank" class="pos-f tr3" title="Github"></a>
@@ -85,8 +112,8 @@
       <ul class="article-meta">
         <li>
           <span class="label">Published Date:</span>
-          <a href="/2018/03/07/浏览器的渲染机制/" class="article-date">
-  <time datetime="2018-03-07T04:53:27.000Z" itemprop="datePublished">2018-03-07</time>
+          <a href="/2018/03/15/markdown画流程图/" class="article-date">
+  <time datetime="2018-03-15T14:07:40.000Z" itemprop="datePublished">2018-03-15</time>
 </a>
 
         </li>
@@ -100,19 +127,12 @@
     
 <nav id="article-nav" class="article-nav">
   
-    <a href="/2018/03/15/markdown画流程图/" id="article-nav-newer" class="article-nav-link-wrap newer">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          markdown画流程图
-        
-      </div>
-    </a>
+    <span id="article-nav-newer" class="article-nav-link-wrap newer"></span>
   
   
-    <a href="/2018/03/03/my-titile/" id="article-nav-older" class="article-nav-link-wrap older">
+    <a href="/2018/03/07/浏览器的渲染机制/" id="article-nav-older" class="article-nav-link-wrap older">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">my titile</div>
+      <div class="article-nav-title">浏览器的渲染机制</div>
     </a>
   
 </nav>
